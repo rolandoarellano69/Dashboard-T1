@@ -35,7 +35,7 @@ const Login = () => {
       </form>
 
       <div className="flex flex-col gap-4 items-center text-gray-100">
-        <Link to="/auth/registro" className=" hover:text-emerald-500 transition-colors  text-xs text-gray-200 ">¿Olvidastes tu contraseña? </Link>
+        <Link to="/auth/olvide-password" className=" hover:text-emerald-500 transition-colors  text-xs text-gray-200 ">¿Olvidastes tu contraseña? </Link>
         <span className=" flex items-center gap-2 text-xs">
           ¿No tienes cuenta? <Link to="/auth/registro" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Registrate </Link>
         </span>

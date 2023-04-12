@@ -11,7 +11,7 @@ const Register = () => {
 
 
     <form className="mb-4" >
-      <button className="flex items-center gap-4 bg-secondary-900 w-full text-center justify-center rounded-xl px-4 py-3  mb-8"> <img src="https://icones.pro/wp-content/uploads/2021/02/google-icone-symbole-logo-png.png" className="h-4 w-4" alt="Icon google" /> Registrate con Google</button>
+      <button className="flex items-center gap-4 bg-secondary-900 w-full text-center justify-center rounded-xl px-4 py-3  mb-8 hover:border border-primary"> <img src="https://icones.pro/wp-content/uploads/2021/02/google-icone-symbole-logo-png.png" className="h-4 w-4" alt="Icon google" /> Registrate con Google</button>
       <div className="relative mb-4">
 
         <RiUserLine className="text-primary absolute top-1/2 -translate-y-1/2 left-2" />
@@ -61,7 +61,7 @@ const Register = () => {
     </form>
 
     <div className="flex flex-col gap-4 items-center text-gray-100">
-      <Link to="/auth/registro" className=" hover:text-emerald-500 transition-colors  text-[10px] text-gray-200 ">Al dar registrarte acetaras los <span className='text-primary'> termino y condiciones</span> como asi las <span className='text-primary'>politicas de privacidad </span></Link>
+      <Link to="/auth/registro" className=" hover:text-emerald-500 transition-colors  text-[10px] text-gray-200 ">Al hacer click a registrarte aceptaras los <span className='text-primary'>Término y Condiciones</span> como así las <span className='text-primary'>Políticas de Privacidad </span></Link>
       <span className=" flex items-center gap-2 text-xs">
         ¿Ya tienes cuenta? <Link to="/auth/" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Ingresa </Link>
       </span>
