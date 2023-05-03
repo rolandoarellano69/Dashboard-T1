@@ -6,6 +6,7 @@ import { RiMailFill, RiLockFill, RiEyeFill, RiEyeCloseFill } from "react-icons/r
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
+    <div className='min-h-screen flex items-center justify-center p-4'>
     <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
       <h1 className="text-3xl uppercase font-bold text-center text-white mb-8 tracking-[5px] ">Iniciar<span className="text-primary "> sesión</span></h1>
 
@@ -35,13 +36,14 @@ const Login = () => {
       </form>
 
       <div className="flex flex-col gap-4 items-center text-gray-100">
-        <Link to="/auth/olvide-password" className=" hover:text-emerald-500 transition-colors  text-xs text-gray-200 ">¿Olvidastes tu contraseña? </Link>
+        <Link to="/olvide-password" className=" hover:text-emerald-500 transition-colors  text-xs text-gray-200 ">¿Olvidastes tu contraseña? </Link>
         <span className=" flex items-center gap-2 text-xs">
-          ¿No tienes cuenta? <Link to="/auth/registro" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Registrate </Link>
+          ¿No tienes cuenta? <Link to="/registro" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Registrate </Link>
         </span>
 
       </div>
     </div>
+  </div>
   )
 }
 

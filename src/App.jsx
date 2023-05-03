@@ -16,16 +16,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth" element={<LayoutAuth />} >
-          <Route index element={<Login />} />
-          <Route path="registro" element={<Register />} />
-          <Route path="olvide-password" element={<ForgetPassword />} />
-
-        </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Register />} />
+        <Route path="/olvide-password" element={<ForgetPassword />} />
 
         <Route path="/" element={<LayoutAdmin />} >
           <Route index element={<Home />} />
-          <Route path="chat" element={<Chat />} />
+          <Route path="/chat" element={<Chat />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>

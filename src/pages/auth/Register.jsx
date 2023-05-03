@@ -5,7 +5,8 @@ import { RiUserLine, RiMailLine, RiLockFill, RiEyeFill, RiEyeCloseFill, RiLockLi
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  return <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
+  return  <div className="min-h-screen flex items-center justify-center p-4">
+  <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
     <h1 className="text-3xl uppercase font-bold text-center text-white mb-8 tracking-[5px] ">Crear
       <span className="text-primary "> cuenta</span></h1>
 
@@ -61,12 +62,13 @@ const Register = () => {
     </form>
 
     <div className="flex flex-col gap-4 items-center text-gray-100">
-      <Link to="/auth/registro" className=" hover:text-emerald-500 transition-colors  text-[10px] text-gray-200 ">Al hacer click a registrarte aceptaras los <span className='text-primary'>Término y Condiciones</span> como así las <span className='text-primary'>Políticas de Privacidad </span></Link>
+      <Link to="registro" className=" hover:text-emerald-300 transition-colors  text-[10px] text-gray-200 ">Al hacer click a registrarte aceptaras los <span className='text-primary'>Término y Condiciones</span> como así las <span className='text-primary'>Políticas de Privacidad </span></Link>
       <span className=" flex items-center gap-2 text-xs">
-        ¿Ya tienes cuenta? <Link to="/auth/" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Ingresa </Link>
+        ¿Ya tienes cuenta? <Link to="/login" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Ingresa </Link>
       </span>
     </div>
   </div>
+</div>
 };
 
 export default Register

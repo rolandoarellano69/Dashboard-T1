@@ -6,6 +6,9 @@ import { RiMailLine } from "react-icons/ri";
 const ForgetPassword = () => {
 
   return (
+    <div className="min-h-screen flex items-center justify-center p-4">
+
+
     <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
       <h1 className="text-3xl uppercase font-bold text-center text-white mb-8 tracking-[5px] ">Recuperar<span className="text-primary "> Contraseña </span></h1>
 
@@ -25,14 +28,15 @@ const ForgetPassword = () => {
 
       <div className="flex flex-col gap-4 items-center text-gray-100">
         <span className=" flex items-center gap-2 text-xs">
-          ¿Ya tienes cuenta? <Link to="/auth/" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Ingresa </Link>
+          ¿Ya tienes cuenta? <Link to="/olvide-password" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Ingresa </Link>
         </span>
         <span className=" flex items-center gap-2 text-xs">
-          ¿No tienes cuenta? <Link to="/auth/registro" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Registrate </Link>
+          ¿No tienes cuenta? <Link to="/registro" className="text-emerald-500 hover:text-gray-100 transition-colors text-xs"> Registrate </Link>
         </span>
 
       </div>
     </div>
+  </div>
   )
 }
 
