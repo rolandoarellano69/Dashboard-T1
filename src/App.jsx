@@ -8,6 +8,7 @@ import Register from "./pages/auth/Register"
 import ForgetPassword from "./pages/auth/ForgetPassword"
 //pages admin
 import Home from "./pages/admin/Home"
+import Profile from "./pages/admin/Profile"
 import Chat from "./pages/admin/Chat"
 import Error404 from "./pages/Error404"
 
@@ -22,6 +23,7 @@ function App() {
 
         <Route path="/" element={<LayoutAdmin />} >
           <Route index element={<Home />} />
+          <Route path="/profile" element={<Profile/>} />
           <Route path="/chat" element={<Chat />} />
         </Route>
         <Route path="*" element={<Error404 />} />
