@@ -13,11 +13,24 @@ const Profile = () => {
             <p>Avatar</p>
           </div>
           <div className='flex-1'>
-            <div className='relative'>
-              <img src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg" alt="" className='h-28 w-28 object-cover rounded-lg ' />
+            <div className='relative mb-2'>
+              <img src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg" alt="" className='h-28 w-28 object-cover rounded-lg' />
               <label htmlFor="avatar" className='absolute bg-primary p-2 rounded-full hover:cursor-pointer -top-4 left-24'> <RiEdit2Line className='text-gray-300' /> </label>
               <input type="file" id='avatar' className='hidden' />
+
             </div>
+              <p className='text-gray-500 text-sm '> Tipo de archivos permitidos: png, jpg, jpeg.</p>
+
+          </div>
+        </div>
+        <div className='flex items-center mb-2'>
+          <div className='w-1/4'>
+            <p>Nombre:</p>
+            <input type='text' className=''></input>
+          </div>
+          <div className='flex-1'>
+     
+              
           </div>
         </div>
       </form>

@@ -84,7 +84,7 @@ const Header = () => {
         </MenuButton>} arrow arrowClassName="bg-secondary-100" transition menuClassName="bg-secondary-100 text-white p-4">
 
           <MenuItem className="p-0 hover:bg-transparent">
-            <Link to="/perfil" className=' rounded-lg transition-colors text-gray-300 hover:bg-secondary-900 flex items-center gap-x-4 py-2 px-6 flex-1'>
+            <Link to="/profile" className=' rounded-lg transition-colors text-gray-300 hover:bg-secondary-900 flex items-center gap-x-4 py-2 px-6 flex-1'>
               <img src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg" className='w-8 h-8 object-cover rounded-full' />
               <div className='flex flex-col gap-1 text-sm'>
                 <span>Jennifer Valdez</span>
