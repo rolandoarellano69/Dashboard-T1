@@ -8,7 +8,7 @@ const Profile = () => {
       <hr className='my-8 border-gray-500' />
 
       <form>
-        <div className='flex items-center '>
+        <div className='flex items-center mb-8 '>
           <div className='w-1/4'>
             <p>Avatar</p>
           </div>
@@ -19,24 +19,42 @@ const Profile = () => {
               <input type="file" id='avatar' className='hidden' />
 
             </div>
-              <p className='text-gray-500 text-sm '> Tipo de archivos permitidos: png, jpg, jpeg.</p>
-
+            <p className='text-gray-500 text-sm '> Tipo de archivos permitidos: png, jpg, jpeg.</p>
           </div>
         </div>
-        <div className='flex items-center mb-2'>
+
+        <div className='flex items-center mb-8'>
           <div className='w-1/4'>
-            <p>Nombre:</p>
-            <input type='text' className=''></input>
+            <p className='text-sm'>Nombre completo: <span className='text-red-500'>*</span></p>
+          </div>
+          <div className='flex-1 flex items-center gap-4'>
+            <div className='w-full'>
+            <input type="text" className='w-full py-2 px-4 rounded-xl bg-secondary-900 outline-none focus:border focus:border-primary' placeholder='Nombre(s)' />
+            </div>
+            <div className='w-full'>
+            <input type="text" className='w-full py-2 px-4 rounded-xl bg-secondary-900 outline-none focus:border focus:border-primary' placeholder='Apellido(s)' />
+            </div>
           </div>
           <div className='flex-1'>
-     
-              
+          </div>
+        </div>
+        
+        <div className='flex items-center'>
+          <div className='w-1/4'>
+            <p className='text-sm'>Empresa: <span className='text-red-500'>*</span></p>
+          </div>
+          <div className='flex-1 flex items-center gap-4'>
+            <div className='w-full'>
+            <input type="text" className='w-full py-2 px-4 rounded-xl bg-secondary-900 outline-none focus:border focus:border-primary' placeholder='Nombre(s)' />
+            </div>
+            <div className='w-full'>
+            <input type="text" className='w-full py-2 px-4 rounded-xl bg-secondary-900 outline-none focus:border focus:border-primary' placeholder='Apellido(s)' />
+            </div>
+          </div>
+          <div className='flex-1'>
           </div>
         </div>
       </form>
-
-
-
     </div >
   )
 }
